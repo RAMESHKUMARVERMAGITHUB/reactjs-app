@@ -14,10 +14,10 @@ spec:
       labels:
         app: reactjs-app
     spec:
-      terminationGracePeriodSeconds: 30
+      # terminationGracePeriodSeconds: 30
       containers:
       - name: reactjs-app
         image: rameshkumarverma/reactjs-app:latest
         imagePullPolicy: "Always"
         ports:
-        - containerPort: 3000
+        - containerPort: 80
